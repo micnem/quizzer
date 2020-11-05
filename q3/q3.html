@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scrambler</title>
+</head>
+<body>
+    <h2>Unscramble the word before timer runs out:</h2>
+    <h3 id="word" style="display:none">Word: dvepolree</h3>
+
+    <input id="input" placeholder="Type something..."></input>
+    <button type="button" id="start" onclick="start()" style="height: 20px;" style="display:block">Start</button>
+    <button type="button" onclick="checkInput()" style="height: 20px;">Submit</button>
+    <progress value="0" max="10" id="progressBar"></progress>
+    <footer>
+
+    </footer>
+    <script>
+        var word = "developer"
+        
+        function start() {
+        var x = document.getElementById("word");
+        var y = document.getElementById("start");
+        if (x.style.display === "none") {
+             x.style.display = "block";
+             y.style.display = "none";
+                 } else {
+             x.style.display = "none";
+         }
+        var timeleft = 10;
+        var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        alert("You ran out of time. The word was developer")
+        }
+        document.getElementById("progressBar").value = 10 - timeleft;
+        timeleft -= 1;
+        }, 1000);
+        
+    }
+
+        
+        function checkInput(){
+        var input = document.getElementById("input").value;
+        if(input == word){
+            alert("correct!")
+        }
+        else{
+            alert("Wronggg")
+        }
+    }
+
+    <audio src="../song.mp3" autoPlay loop/>
+    </script>
+</body>
+</html>
