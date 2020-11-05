@@ -8,16 +8,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
     <title>Question 2</title>
+
+    <style type="text/css">
+
+    img{    
+        content: "";
+        background: no-repeat center center fixed;
+        background-size: cover;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+        #intro_banner, #next_banner{
+        background: grey;
+        text-align: center;
+        height: 400px;
+        width: 500px;
+        margin-left: 35%;
+    }
+
+    .data{
+        text-align: center;
+    }
+    </style>
   </head>
   <body>
+<img src="option1.png">
+<div class="card-img-overlay" id="intro_banner">
+    <h1>Round 2</h1>
+    <p>Congratulations on reaching round 2!</p>
+    <p>In this round you will need to input the number you see on the screen</p>
+    <p>Get ready, because the number will be gone in the blink of an eye</p>
+    <button class="btn btn-warning" id="bannerbtn">Go!</button>
+</div>
 
-<h1>Question 2</h1>
-
+<section class="page">
 <div class="data">
     <label>Enter the number displayed on the screen</label>
-    <input type="text" name="number" id="text" placeholder="Enter number here">
-    <button class="btn btn-warning" id="submit">Submit</button>
+    <p><input type="text" name="number" id="text" placeholder="Enter number here"></p>
+    <p><button class="btn btn-warning" id="submit">Submit</button></p>
 </div>
+<div class="data">
+    <label>Enter the 2nd number displayed on the screen</label>
+    <p><input type="text" name="number" id="text2" placeholder="Enter number here"></p>
+    <p><button class="btn btn-warning" id="submit2">Submit</button></p>
+</div>
+<div class="data">
+    <label>Enter the 3rd number displayed on the screen</label>
+    <p><input type="text" name="number" id="text3" placeholder="Enter number here"></p>
+    <p><button class="btn btn-warning" id="submit3">Submit</button></p>
+</div>
+</section>
+
+<div class="card-img-overlay" id="next_banner" style="display: none">
+    <h1>Congratulations on finishing round 2!</h1>
+    <button class="btn btn-warning" id="nextbtn">Next!</button>
+</div>
+
 
     <script src="question2.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

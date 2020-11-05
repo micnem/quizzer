@@ -10,21 +10,62 @@
     <title>Question 4</title>
   </head>
   <body>
-<div>
-<h1>Question 4</h1>
+
+<img src="option1.png">
+
+<div class="card-img-overlay" id="intro_banner">
+    <h1>Round 4</h1>
+    <p>Congratulations on reaching round 4!</p>
+    <p>In this round, after pressing start,</p>
+    <p>you will need to react quickly to prevent the boxes from leaving the screen.</p>
+    <p>If any part of the box leaves the screen, it's game over!</p>
+    <p>Stop the boxes from moving with the stop button</p>
+    <p>Get ready, because the boxes move quick!</p>
+    <p><button class="btn btn-warning" id="bannerbtn">Go!</button></p>
 </div>
 
 
-    <div class="container" id="container" style="text-align: center; position:relative;">
-      <div id="blue"></div>
-      <div id="blue"></div>
-      <div id="blue"></div>
-      <div id="blue"></div>
-      <div id="blue"></div>
-      <div id="blue"></div>
-      <div id="blue"></div>
+<div id="start" style="padding: 20px;">
+   <button class="btn btn-warning btn-lg" id="startbutton">Go!</button>
+   <button class="btn btn-warning btn-lg" id="stopbutton">STOP</button>
+</div>
 
+
+<section style="margin-left: 40%; margin-top: 20%;" id="game">
+    <div class="container" id="container8" style="text-align: center; position:relative;">
+        <img src="car.jpeg" id="car">
     </div>
+</section>
+<section style="margin-left: 40%;" id="game2">
+    <div class="container" id="container7" style="text-align: center; position:relative;">
+         <img src="car2.jpeg" id="car">
+    </div>
+</section>
+<section style="margin-left: 40%;" id="game3">
+    <div class="container" id="container" style="text-align: center; position:relative;">
+        <img src="car3.png" id="car">
+    </div>
+</section>
+ <section style="margin-left: 40%;" id="game4">
+    <div class="container" id="container2" style="text-align: center; position:relative;">
+        <img src="car4.jpeg" id="car">
+    </div>
+</section>
+<section style="margin-left: 40%;" id="game5">
+    <div class="container" id="container5" style="text-align: center; position:relative;">
+        <img src="car5.jpeg" id="car">
+    </div>
+</section>
+<section style="margin-left: 40%;" id="game6">
+    <div class="container" id="container6" style="text-align: center; position:relative;">
+        <img src="car6.jpeg" id="car">
+    </div>
+</section>
+
+<div class="card-img-overlay" id="next_banner" style="display: none">
+    <h1>Congratulations on finishing round 4!</h1>
+    <button class="btn btn-warning" id="nextbtn">Next!</button>
+</div>
 
     <script src="question4.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
