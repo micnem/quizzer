@@ -1,0 +1,16 @@
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #username_banner{
+        border: 2px dashed grey;
+        text-align: center;
+        height: 200px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 40%;
+        margin-top: 20%;
+    }

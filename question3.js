@@ -3,6 +3,7 @@ question.setAttribute("id", "question")
 let h1 = document.createElement("h1")
 h1.innerHTML = "which is funniest?"
 question.appendChild(h1)
+question.style.textAlign = "center"
 document.body.appendChild(question)
 
 // ////////////////////////////////
@@ -10,6 +11,8 @@ document.body.appendChild(question)
 
 let container = document.createElement("div")
 container.setAttribute("id", "container")
+container.style.dispay = "flex";
+container.style.flexWrap = "wrap"
 document.body.appendChild(container)
 
 // /////////////////////////////
@@ -21,9 +24,6 @@ answer.setAttribute("id", "answer")
 answer.addEventListener("mouseover", correct)
 container.appendChild(answer)
 
- function wrong() {
- 	box.setAttribute("id", "bad")
- }
 
 
 for (var i = 0; i < images.length; i++) {
@@ -31,12 +31,17 @@ for (var i = 0; i < images.length; i++) {
 	let image = document.createElement("img")
 	image.setAttribute("src", images[i])
 	box.appendChild(image)
-	
-	if (box.addEventListener("mouseover", wrong)) {}
+	box.setAttribute("id", "bad")
 	container.appendChild(box)
 }
 
+let bad = document.getElementById('bad')
 
+function wrong(){
+	bad.style.animation = "swing 1s 3"
+}
+
+bad.addEventListener("mouseover", wrong)
 
 
 function next(){

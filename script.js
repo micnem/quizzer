@@ -1,9 +1,12 @@
-let btn = document.querySelector("buton")
+let banner = document.getElementById('username_banner')
+let page = document.getElementById('page')
+let btn = document.getElementById('button')
 
-btn.addEventListener("mouseover", audio.play())
-
-function play(argument) {
-	let audio = new Audio("sample.mp3");
+function clearbanner() {
+	banner.style.display = "none"
+	page.style.opacity = "1";
+	
+	
 }
-
-    
+console.log(banner)
+btn.addEventListener("click", clearbanner)
