@@ -1,6 +1,4 @@
-.hero-image {
-background-color: tomato;
-}
+
 .quiz-wrapper {
   position: relative;
   display: block;
@@ -40,7 +38,7 @@ background-color: tomato;
   position: relative;
   z-index: 50;
   font-size: 13px;
-  color: white
+  color: black
   
 }
 .quiz-wrapper .answers {

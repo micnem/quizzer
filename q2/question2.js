@@ -151,9 +151,6 @@ function banner_hide3(){
 }
 
 
-function next(){
-	location.href = "question.4.html"
-}
 
 
 let submit3 = document.getElementById("submit3")
