@@ -1,0 +1,101 @@
+
+.quiz-wrapper {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  width: 550px;
+  height: 450px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quiz-wrapper p.question-description {
+  background: #19286C;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+}
+.quiz-wrapper ul.options {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 165px;
+  list-style: none;
+  border: 1px solid #19286C;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.quiz-wrapper ul.options li {
+  border: 1px solid transparent;
+  padding: 6px 8px;
+}
+.quiz-wrapper ul.options li.title {
+  background: #19286C;
+  color: white;
+}
+.quiz-wrapper ul.options li.option {
+  display: block;
+  position: relative;
+  z-index: 50;
+  font-size: 13px;
+  color: black
+  
+}
+.quiz-wrapper .answers {
+  display: inline-block;
+  width: 250px;
+  font-size: 13px;
+  line-height: 20px;
+  
+}
+.quiz-wrapper .answers .target {
+  display: inline-block;
+  width: 110px;
+  margin: 4px;
+  margin-top: auto;
+  text-align: center;
+  border: 1px solid black
+}
+.quiz-wrapper button[type="submit"] {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  padding: 10px;
+  background: #19286C;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+.lightbox-bg {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  
+}
+.status {
+  display: none;
+  position: absolute;
+  z-index: 110;
+  text-align: center;
+  width: 80%;
+  top: 220px;
+  left: 47px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.status p {
+  background: white;
+  padding: 30px;
+}
+.next{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+#fun{
+  margin-left: 45px;
+}
